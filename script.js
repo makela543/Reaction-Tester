@@ -4,7 +4,11 @@ function createShape() {
     
     var positionTopRandom = Math.random() * 400;
     
+    var positionLeftRandom = Math.random() * 400;
+    
     document.getElementById("shape").style.top = positionTopRandom + "px";
+    
+    document.getElementById("shape").style.left = positionLeftRandom + "px";
     
     document.getElementById("shape").style.display = "block";
     
