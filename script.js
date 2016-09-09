@@ -1,5 +1,12 @@
 var start = new Date().getTime();
 
+function createShape() {
+    
+    document.getElementById("shape").style.display = "block";
+    
+    start = new Date().getTime();
+}
+
 document.getElementById("shape").onclick = function() {
     
     document.getElementById("shape").style.display = "none";
@@ -9,5 +16,7 @@ document.getElementById("shape").onclick = function() {
     var timeTaken = (end - start) / 1000;
     
     document.getElementById("timeTaken").innerHTML = timeTaken + "s";
+    
+    setTimeout(createShape, 1000);
     
 }
