@@ -8,6 +8,6 @@ document.getElementById("shape").onclick = function() {
     
     var timeTaken = (end - start) / 1000;
     
-    alert(timeTaken);
+    document.getElementById("timeTaken").innerHTML = timeTaken + "s";
     
 }
