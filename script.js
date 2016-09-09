@@ -17,6 +17,6 @@ document.getElementById("shape").onclick = function() {
     
     document.getElementById("timeTaken").innerHTML = timeTaken + "s";
     
-    setTimeout(createShape, 1000);
+    setTimeout(createShape, Math.random() * 2500);
     
 }
