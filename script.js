@@ -1,5 +1,36 @@
 var start = new Date().getTime();
 
+function randomizeColor() {
+    
+    var randomNumber = Math.floor(Math.random() * 6);
+    
+    var shapeColor = "";
+    
+    switch(randomNumber) {
+            
+        case 0:
+            shapeColor = "blue";
+            break;
+        case 1:
+            shapeColor = "red";
+            break;
+        case 2:
+            shapeColor = "yellow";
+            break;
+        case 3:
+            shapeColor = "green";
+            break;
+        case 4:
+            shapeColor = "pink";
+            break;
+        case 5:
+            shapeColor = "orange";
+            
+    }
+    document.getElementById("shape").style.backgroundColor = shapeColor;
+    
+}
+
 function createShape() {
     
     var positionTopRandom = Math.random() * 400;
@@ -17,6 +48,8 @@ function createShape() {
     document.getElementById("shape").style.height = widthRandom + "px";
     
     document.getElementById("shape").style.display = "block";
+    
+    randomizeColor();
     
     start = new Date().getTime();
     
