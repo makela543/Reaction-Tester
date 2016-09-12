@@ -6,3 +6,11 @@
     display: none;
     position: relative;
 }
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.bold {
+    font-weight: bold;
+}
