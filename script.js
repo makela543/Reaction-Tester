@@ -53,6 +53,18 @@ function randomizeSize() {
     
 }
 
+function randomizeShape() {
+    
+    var randomNumber = Math.floor(Math.random() * 2)
+    
+    if(randomNumber == 0) {
+        document.getElementById("shape").style.borderRadius = "50%";
+    } else {
+        document.getElementById("shape").style.borderRadius = "0%";
+    }
+    
+}
+
 function createShape() {
     
     document.getElementById("shape").style.display = "block";
@@ -62,6 +74,8 @@ function createShape() {
     randomizeSize();
     
     randomizeColor();
+    
+    randomizeShape();
     
     start = new Date().getTime();
     
