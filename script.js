@@ -1,5 +1,7 @@
 var start = new Date().getTime();
 
+var highScore = Infinity;
+
 function randomizeColor() {
     
     var randomNumber = Math.floor(Math.random() * 6);
@@ -98,6 +100,11 @@ document.getElementById("shape").onclick = function() {
     var timeTaken = (end - start) / 1000;
     
     document.getElementById("timeTaken").innerHTML = timeTaken + "s";
+    
+    if(timeTaken < highScore) {
+        highScore = timeTaken;
+        document.getElementById("highScore").innerHTML = highScore + "s";
+    }
     
     appearAfterDelay();
     
